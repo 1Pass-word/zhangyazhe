@@ -1,5 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  publicPath: './',
+  publicPath: '/zhangyazhe/src/views/XiangMu.vue',
   transpileDependencies: true
 })
