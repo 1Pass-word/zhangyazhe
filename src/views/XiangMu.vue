@@ -1,6 +1,7 @@
 <template>
   <div class="box">
     <div class="top">
+      <h3>微信读书</h3>
       <svg
         t="1691065526936"
         class="icon"
@@ -19,6 +20,7 @@
       </svg>
       <input type="text" placeholder="搜索" />
     </div>
+
     <div class="shujia">
       <div class="shujia1">
         <div class="shujia11">
@@ -52,11 +54,11 @@
             alt=""
           />
           <img
-            src="https://bookcover.yuewen.com/qdbimg/349573/1037125335/90.webp"
+            src="https://bookcover.yuewen.com/qdbimg/349573/1023457750/150.webp"
             alt=""
           />
           <img
-            src="https://bookcover.yuewen.com/qdbimg/349573/1037125335/90.webp"
+            src="https://bookcover.yuewen.com/qdbimg/349573/1034383977/150.webp"
             alt=""
           />
         </div>
@@ -98,13 +100,14 @@ import zhexue from "../components/ZheXue.vue";
 export default {
   data() {
     return {
-      activeTab: 1,
+      activeTab: 0,
+
       tabs: [
         { title: "推荐" },
         { title: "分类" },
         { title: "排行" },
-        { title: "文学艺术" },
-        { title: "哲学社科" },
+        { title: "文学" },
+        { title: "历史" },
       ],
     };
   },
@@ -130,6 +133,10 @@ export default {
   justify-content: space-between;
   font-size: 20px;
   font-family: "华文宋体";
+  position: sticky;
+  top: 100px;
+  left: 10px;
+  background: #fff;
 }
 
 .tab-content {
@@ -147,7 +154,7 @@ export default {
   height: 160px;
   background: #565860;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 45px;
   border-radius: 20px;
   padding: 20px;
   .shujia1 {
@@ -208,20 +215,28 @@ export default {
 }
 .top {
   width: 100%;
-  height: 45px;
+  height: 100px;
   margin: auto;
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  background: #fff;
+  h3 {
+    margin-left: 38%;
+  }
   input {
-    width: 90%;
-    height: 100%;
+    width: 80%;
+    height: 45px;
     border-radius: 50px;
     border: none;
     background: #f5f7f9;
     font-size: 20px;
     padding-left: 45px;
+    margin-top: 20px;
   }
   svg {
     position: absolute;
-    margin-top: 7px;
+    margin-top: 27px;
     margin-left: 10px;
   }
 }

@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <nav>
-      <h1>微信读书</h1>
-    </nav>
+    <nav></nav>
 
     <router-view />
   </div>
